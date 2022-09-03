@@ -1,0 +1,25 @@
+{
+	"name": "kanban-app-backend",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"start": "node kanban-server/server.js",
+		"dev": "nodemon kanban-server/server.js",
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --legacy-peer-deps --prefix kanban-app && npm run build --prefix kanban-app"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1",
+		"helmet": "^5.1.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.4.4"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.19"
+	}
+}
